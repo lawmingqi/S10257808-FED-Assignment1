@@ -1,0 +1,224 @@
+body{
+    background-image: url("picture&video/newspaper.jpg");
+    background-position: fixed;
+    background-position: no-repeat;
+}
+
+font-face {
+    font-family: 'MV Boli'; 
+    src: url('MV\ Boli.ttf') format('truetype'); 
+}
+
+/* Heading */
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.image {
+    margin-top: -5px;
+    margin-right: 70px;
+    width: 210px; 
+    height: 210px; 
+    border-radius: 50%;
+
+}
+
+.text-content {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.header p {
+    margin: 4;
+    font-family: 'MV Boli';
+    background-color: rgba(239, 187, 251, 0.8);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+
+.header h1 {
+    text-shadow: rgba(239, 187, 251, 0.8);
+
+    text-align:center;
+    justify-content : center;
+
+    font-family: 'MV Boli', Arial, sans-serif; 
+    font-size: 35px;
+    margin-top: -45px;
+    margin-bottom: 10px;
+
+
+    font-size: calc( 1em + 5vmin );
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: rgb(215, 153, 221);
+    
+    text-shadow: 
+      
+      var(--x-offset) var(--y-offset) 0px var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) ) calc( var(--y-offset) + var(--stroke) )
+      0px var(--stroke-color);
+    
+  }
+
+  @supports ( text-shadow: 1px 1px 1px 1px black ) {
+    .heading {
+      text-shadow:
+        
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color), 
+        
+        var(--x-offset) 
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+      
+    }
+  }
+
+
+/* Description */
+.description {
+
+    
+    font-family: 'MV Boli';
+    font-weight: 200;
+    z-index: 2;
+    display: inline-block;
+}
+
+.desc1, .desc2, .desc3 {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0); 
+    color: rgba(239, 187, 251);
+    padding: 8px;
+}
+
+.desc1 {
+    width: 600px; 
+    margin-top: 50px;
+    margin-left: 390px;
+}
+
+.desc2 {
+    width: 600px; 
+    margin-top: 50px;
+    margin-left: 390px;
+}
+
+.desc3 {
+    margin-top: 80px;
+    margin-left: 370px;
+    width: 300px; 
+
+}
+
+/*Images*/
+.enlarge1 {
+    height: 350px; 
+    width: auto;
+    left: 0;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.enlarge2 {
+    height: 220px; 
+    width: auto;
+    right: 0;
+    position: absolute;
+    margin-right: 70px;
+    margin-top: 230px;
+}
+
+/*More information*/
+
+.information{
+    display : flex;
+    margin-top: 100px;
+    margin-left:70px;
+    margin-right: 70px;
+
+}
+
+
+.information .real-life {
+    font-family:'MV Boli';
+    font-size: 17px;
+    text-align:start;
+    padding: 10px;
+    color : rgb(0, 0, 0);
+    background: rgba(239, 187, 251, 0.9);
+    
+    margin-right:25px;
+    border-radius: 5px;
+}
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.instagram-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 24%; /* To make the image round */
+}
+
+
+/*home button*/
+.home{
+    
+    margin-left:50px ;
+}
+
+.home a {
+
+    display: inline-block;
+    width:65px;
+    font-family: 'MV Boli';
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(239, 187, 251);
+
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none; 
+
+    transition: background-color 0.3s ease; 
+}
+
+.home a:hover {
+    background-color: rgb(239, 187, 251); 
+    color: black;
+}
+
+.home p {
+    margin: 0; 
+}
+
+
+

@@ -1,0 +1,357 @@
+
+body {
+    background:
+        linear-gradient(to bottom, #000000, rgb(201, 201, 246)) top,
+        linear-gradient(to bottom, rgb(201, 201, 246),rgb(201, 201, 246), #000000 ) 50% bottom; 
+    background-size: 100% 30%, 100% 70%;
+    background-repeat: no-repeat;
+}
+      
+      
+  
+  
+
+.slideshow-container {
+
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 440px; 
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    border-radius: 3px;
+  }
+  
+
+@font-face {
+    font-family: 'MV Boli'; 
+    src: url('MV\ Boli.ttf') format('truetype'); 
+}
+
+/* Heading */
+
+.heading {
+    text-shadow: rgba(191, 110, 171, 0.78);
+    text-align:center;
+    justify-content : center;
+    font-family: 'MV Boli', Arial, sans-serif; 
+    font-size: 35px;
+    margin-top: -95px;
+}
+.Wushu p {
+    background-color: rgba(174, 130, 179, 0.78);
+    color: white;
+    font-size: 33px;
+
+    margin-top: -75px;
+}
+.Wushu h6 {
+    color: white;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.Wushu h1 {
+    font-size: calc( 1em + 5vmin );
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: rgb(215, 153, 221);
+    
+    text-shadow: 
+      
+      var(--x-offset) var(--y-offset) 0px var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) ) calc( var(--y-offset) + var(--stroke) )
+      0px var(--stroke-color);
+    
+  }
+
+  @supports ( text-shadow: 1px 1px 1px 1px black ) {
+    h1 {
+      text-shadow:
+        
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color), 
+        
+        var(--x-offset) 
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+      
+    }
+  }
+
+
+
+.video-container .image,
+.video-container .video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.video-container .image {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.video-container .video {
+    display: none;
+}
+
+/* Routine 1&2 */
+
+.routine1 .text,
+.routine2 .text,
+.routine3 .text,
+.routine4 .text{
+    color: rgb(53, 53, 121);
+    font-family: 'MV Boli';
+    font-size: 20px;
+
+}
+.routine1{
+    margin-top: 5px;
+    margin-left: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Changed 'left' to 'flex-start' */
+}
+
+.routine1 .video-container{
+    padding-left: 50px;
+    margin-right: 40px;
+    margin-left: 50px;
+
+    position: relative;
+    width: 270px; 
+    height: 400px; 
+    overflow: hidden;
+    transform: rotate(-5deg);
+    border-radius: 20px;
+}
+
+/* Routine 2 */
+.routine2{
+    margin-top: -100px;
+    margin-right: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+
+}
+
+.routine2 .video-container{
+    padding-right: 50px;
+    margin-left: 40px;
+    margin-right: 50px;
+
+
+    position: relative;
+    width: 270px; 
+    height: 400px; 
+    overflow: hidden;
+    transform: rotate(5deg);
+    border-radius: 20px;
+}
+
+
+/* Routine 3&4 */
+
+.slides {
+    
+    position: relative;
+  }
+  
+.slides img {
+    display: block;
+    border-radius: 20px;
+    width: 330px; 
+    height: 420px; 
+    object-fit: cover;
+    position: relative; 
+    z-index: 1; 
+}
+  
+/* Taiji Shan */
+.routine3 {
+
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-top: -70px;
+    
+    transform: rotate(-5deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.routine3 .text {
+    font-family: 'MV Boli';
+    font-size: 20px;
+    transform: rotate(5deg);
+
+    margin-left: 10px;
+}
+
+/* Routine 4 */
+.routine4 {
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-top: -70px;
+
+    transform: rotate(5deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.routine4 .text {
+    font-family: 'MV Boli';
+    font-size: 20px;
+    transform: rotate(-5deg);
+
+    margin-right: 10px;
+
+}
+
+
+/* Intoduction to Wushu*/
+
+.introduction h2{
+    color: white;
+    background-color: rgba(71, 71, 118, 0.78);
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+.intro-container{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left:50px;
+    margin-right: 50px;
+
+}
+
+
+.introduction .description {
+    font-family:'MV Boli';
+    font-size: 17px;
+    text-align:start;
+    padding: 10px;
+    color : rgb(255, 255, 255);
+    background: rgba(71, 71, 118, 0.78);
+    
+    margin-right:20px;
+    margin-bottom: 30px;
+
+}
+
+
+
+/*Sign Up*/
+
+.signup h2{
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 500px;
+
+    text-align: left;
+    justify-content: center;
+    font-family: 'MV Boli';
+    background-color:rgba(201, 201, 246, 0.78) ;
+    color: white
+    
+}
+
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.inputDetails{
+
+    font-family: 'MV Boli';
+    color: white;
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+    margin-right: 50px;
+    margin-left: 40px;
+
+    background: rgba(201, 201, 246, 0.78);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  .long-input {
+    box-sizing: border-box;
+
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    width: 470px; 
+
+  }
+  
+  
+  .clickme-button {
+    width:95px;
+    margin-left: 370px;
+    font-family: 'MV Boli';
+    font-size: 15px;
+    padding: 3px;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    align-self: right; 
+  }
+
+  .instagram{
+
+    margin-left:50px;
+  }
+  
+@import "baguazhang.css";
+
