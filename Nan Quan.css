@@ -1,0 +1,262 @@
+body{
+    background-image: url("picture&video/newspaper.jpg");
+    background-position: fixed;
+    background-position: no-repeat;
+}
+
+font-face {
+    font-family: 'MV Boli'; 
+    src: url('MV\ Boli.ttf') format('truetype'); 
+}
+
+/* Heading */
+.header1,
+.header2 {
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header1 p,
+.header2 p {
+    margin-top: -69px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'MV Boli';
+    background-color: rgba(255, 255, 166);
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding:5px;
+}
+
+
+h1 {
+    text-shadow: rgba(255, 255, 0, 0.8);
+
+    text-align:center;
+    justify-content : center;
+
+    font-family: 'MV Boli', Arial, sans-serif; 
+    font-size: 35px;
+    margin-top: -45px;
+    margin-bottom: 10px;
+
+
+    font-size: calc( 1em + 5vmin );
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: gold;
+    
+    text-shadow: 
+      
+      var(--x-offset) var(--y-offset) 0px var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) ) calc( var(--y-offset) + var(--stroke) )
+      0px var(--stroke-color);
+    
+  }
+
+  @supports ( text-shadow: 1px 1px 1px 1px black ) {
+    .heading {
+      text-shadow:
+        
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color), 
+        
+        var(--x-offset) 
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+      
+    }
+  }
+
+
+/* Description */
+.description {
+    justify-content: center;
+    align-items: center;
+    font-family: 'MV Boli';
+
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.desc1 {
+    text-align: center;
+    background-color: gold;
+    margin-top: 50px;
+    position: relative; 
+}
+
+.desc2,
+.desc3 {
+    vertical-align: top;
+    display: inline-block; 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0); 
+    color: rgba(255, 255, 0);
+    padding: 8px;
+    width: 470px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.desc2{
+    margin-right: 70px;
+}
+
+/*Images*/
+.enlarge-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.enlarge1 {
+    height: auto; 
+    width: 470px;
+    margin-right: 55px;
+}
+
+.enlarge2 {
+    height: auto; 
+    width: 470px;
+    margin-left: 55px;
+}
+
+.nq-vid {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+/*Double Daggers*/
+
+.header2 {
+    margin-top: 110px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 70px;
+}
+
+.slides {
+    margin-top: -105px;
+    margin-left: 55px;
+    position: relative;
+  }
+  
+.slides img {
+    display: block;
+    width: 470px; 
+    height: auto; 
+    object-fit: cover;
+    position: relative; 
+}
+
+.daggers-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 100px;
+    margin-left: 55px;
+}
+
+.desc4, .desc5 {
+    font-family: 'MV Boli';
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0); 
+    color: rgba(255, 255, 0);
+    padding: 3px;
+    margin-top: -30px;
+}
+
+.desc4{
+    margin-bottom: 10px;
+}
+
+.desc5{
+    margin-top: 10px;
+}
+
+.sbs-vid{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-right: 65px;
+    margin-top: -450px;
+
+}
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.instagram-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 24%; /* To make the image round */
+}
+
+
+/*home button*/
+.home{
+    
+    margin-left:50px ;
+}
+
+.home a {
+
+    display: inline-block;
+    width:65px;
+    font-family: 'MV Boli';
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+
+    background-color: black;
+    color: gold;
+
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none; 
+
+    transition: background-color 0.3s ease; 
+}
+
+.home a:hover {
+    background-color: gold; 
+    color: black;
+}
+
+.home p {
+    margin: 0; 
+}
+
+
+
