@@ -12,13 +12,11 @@ font-face {
 /* Heading */
 
 .header {
-    display: flex;
-    align-items: center;
-    margin-left: 160px;
-    margin-top: 20px;
+    display: inline-block;
+    margin-left: 125px;
 }
 
-.image {
+.header image {
     margin-top: -5px;
     margin-right: 70px;
     width: 210px; 
@@ -31,28 +29,27 @@ font-face {
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
+
+    font-family: 'MV Boli'; 
+    font-size: 40px;
 }
 
 .header p {
-    margin: 4;
-    font-family: 'MV Boli';
-    background-color: rgba(238, 28, 116, 0.8);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
+    margin-top: -30px;
+    text-align: center;
+    width: 105px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(237, 133, 129);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }
 
 
 .header h1 {
-    text-shadow: rgba(238, 28, 116);
+    text-shadow: rgba(237, 133, 129);
 
-    text-align:center;
+    text-align:left;
     justify-content : center;
-
-    font-family: 'MV Boli', Arial, sans-serif; 
-    font-size: 35px;
-    margin-top: -45px;
-    margin-bottom: 10px;
-
 
     font-size: calc( 1em + 5vmin );
     font-weight: 700;
@@ -62,7 +59,7 @@ font-face {
     --y-offset: 0.0625em;
     --stroke: 0.025em;
     --background-color: white;
-    --stroke-color: rgb(238, 28, 116);
+    --stroke-color: rgb(237, 133, 129);
     
     text-shadow: 
       
@@ -95,81 +92,109 @@ font-face {
 
 /* Description */
 .description {
+    display: flex;
+    align-self: flex-end;
 
-    
+    justify-content: right;
+    margin-top: 60px;
     font-family: 'MV Boli';
     font-weight: 200;
     z-index: 2;
     display: inline-block;
 }
 
-.desc1, .desc2, .desc3 {
-    border-radius: 6px;
-    background-color: rgba(255, 255, 255, 0.8); 
-    color: rgba(238, 28, 116);
+.desc1, .desc2, .desc3 {  
+    margin-top: 18px;
+    border-radius: 5px;
+    background-color: rgba(237, 133, 129,0.8); 
+    color: rgb(255, 255, 255);
     padding: 3px;
 }
 
 .desc1 {
     width: 600px; 
-    margin-top: 50px;
-    margin-left: 390px;
+    margin-left: 370px;
 }
 
 .desc2 {
-    width: 600px; 
-    margin-top: 50px;
-    margin-left: 390px;
+    width: 480px; 
+    margin-left: 370px;
 }
 
 .desc3 {
-    margin-top: 80px;
     margin-left: 370px;
-    width: 300px; 
+    width: 560px; 
 
 }
 
 /*Images*/
+
+img {
+    border-radius: 10px;
+}
 .enlarge1 {
-    height: 350px; 
+    height: 400px; 
     width: auto;
     left: 0;
     position: absolute;
-    margin-left: 70px;
-    margin-top: 30px;
+    margin-left: 85px;
+    margin-top: -160px;     
 }
 
 .enlarge2 {
-    height: 220px; 
-    width: auto;
+    height: auto; 
+    width: 400px;
     right: 0;
     position: absolute;
-    margin-right: 70px;
-    margin-top: 230px;
+    margin-right: 140px;
+    margin-top: -500px;
+    margin-bottom: 20px;
+}
+
+
+.enlarge3 {
+    height: 280px; 
+    width: 460px;
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.tjs-vid{
+    margin-left: 380px;
+    
 }
 
 /*More information*/
-
-.information{
-    display : flex;
-    margin-top: 150px;
-    margin-left:70px;
-    margin-right: 70px;
-
+.information {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    align-items: left; 
+    font-family: 'MV Boli';
+    color: rgb(237, 133, 129);
+    margin-left: -40px;
 }
 
+.real-life {
 
-.information .real-life {
-    font-family:'MV Boli';
-    font-size: 17px;
-    text-align:start;
+    background: rgb(255, 255, 255);
+
+    text-align: start;
     padding: 10px;
-    color : rgb(255, 255, 255);
-    background: rgba(238, 28, 116, 0.8);
-    
-    margin-right:25px;
+    margin-right: 45px;
     border-radius: 5px;
+    width: 500px;
 }
+
+.information h4 {
+    font-size: 16px;
+    font-family: 'MV Boli';
+    color: rgb(237, 133, 129);
+    background:none;
+
+}
+
 
 .instagram {
     display: flex;
@@ -181,7 +206,7 @@ font-face {
 .instagram-logo {
     width: 50px;
     height: 50px;
-    border-radius: 24%; /* To make the image round */
+    border-radius: 25%; /* To make the image round */
 }
 
 
@@ -201,7 +226,7 @@ font-face {
     text-align: center;
 
     background-color: rgb(255, 255, 255);
-    color: rgba(238, 28, 116);
+    color: rgb(237, 133, 129);
 
     border: none;
     border-radius: 6px;
@@ -212,7 +237,7 @@ font-face {
 }
 
 .home a:hover {
-    background-color: rgba(238, 28, 116); 
+    background-color: rgb(237, 133, 129); 
     color: rgb(255, 255, 255);
 }
 

@@ -1,5 +1,4 @@
 
-
 //video
 const videoContainers = document.querySelectorAll('.video-container');
 
@@ -57,6 +56,8 @@ function startSlideshow1(slideshow) {
 
     showSlides();
 }
+
+
 
 //slideshow for routine 3&4
 const slideshowContainers = document.querySelectorAll('.slideshow-container');
