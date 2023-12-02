@@ -1,7 +1,8 @@
 body{
     background-image: url("picture&video/newspaper.jpg");
-    background-position: fixed;
-    background-position: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 font-face {
@@ -38,7 +39,7 @@ font-face {
     margin-top: -30px;
     text-align: center;
     width: 105px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(237, 133, 129);
     color: rgb(0, 0, 0);
     font-size: 18px;
@@ -178,7 +179,7 @@ img {
 
 .real-life {
 
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255,0.8);
 
     text-align: start;
     padding: 10px;

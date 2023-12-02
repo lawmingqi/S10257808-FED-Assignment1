@@ -17,7 +17,7 @@ function startSlideshow(slideshow) {
 
         slides[slideIndex - 1].style.display = 'block';
 
-        setTimeout(showSlides, 2400);
+        setTimeout(showSlides, 1500);
     }
 
     showSlides();
@@ -26,25 +26,6 @@ function startSlideshow(slideshow) {
 // Call slideshow function
 const slideshowContainer1 = document.querySelector('.slideshow-container');
 startSlideshow(slideshowContainer1);
+const slideshowContainer2 = document.querySelector('.jjbSlide .slides');
+startSlideshow(slideshowContainer2);
 
-
-
-
-//function for enlarge image upon hover
-function addImageHoverEffect(selector) {
-    const image = document.querySelector(selector);
-    let originalTransform;
-
-    image.addEventListener('mouseenter', function() {
-        originalTransform = this.style.transform;
-        this.style.transform = 'scale(1.1)'; // Change the scale factor as needed
-    });
-
-    image.addEventListener('mouseleave', function() {
-        this.style.transform = originalTransform || 'none';
-    });
-}
-
-// To use the function with a specific class or ID
-addImageHoverEffect('.enlarge1');
-addImageHoverEffect('.enlarge2');

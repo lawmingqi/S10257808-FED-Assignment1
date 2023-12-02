@@ -1,7 +1,8 @@
-body{
+body {
     background-image: url("picture&video/newspaper.jpg");
-    background-position: fixed;
-    background-position: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 font-face {
@@ -12,6 +13,7 @@ font-face {
 /* Heading */
 
 .header {
+    font-size: 38px;
     display: flex;
     align-items: center;
     margin-left: 160px;
@@ -34,8 +36,9 @@ font-face {
 }
 
 .header p {
-    margin: 4;
-    font-family: 'MV Boli';
+    width:400px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(238, 28, 116, 0.8);
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -49,7 +52,6 @@ font-face {
     justify-content : center;
 
     font-family: 'MV Boli', Arial, sans-serif; 
-    font-size: 35px;
     margin-top: -45px;
     margin-bottom: 10px;
 

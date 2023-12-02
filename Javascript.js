@@ -1,10 +1,13 @@
 
 //video
-const videoContainers = document.querySelectorAll('.video-container');
+//Selects all elements with the class name 'video-container'.
+const videoContainers = document.querySelectorAll('.video-container'); 
 
 videoContainers.forEach(container => {
     const thumbnail = container.querySelector('.image');
     const video = container.querySelector('.video');
+
+    //variable is declared to store the timeout ID for the play action.
     let playTimer;
 
     container.addEventListener('mouseenter', function() {
@@ -14,54 +17,56 @@ videoContainers.forEach(container => {
         const startTime = 27;
         video.currentTime = startTime; // Set the video to start at the specified time
 
-        video.muted = true; // Mute the video to comply with browser policies
+        video.muted = true;
         video.play(); // Play the video on hover from the specified time
 
         playTimer = setTimeout(() => {
-            video.pause(); // Pause the video after 8 seconds
-        }, 7700); // 8000 milliseconds = 8 seconds
+            video.pause(); // Pause the video after 7.7 seconds
+        }, 7700); 
     });
 
+
     container.addEventListener('mouseleave', function() {
-        clearTimeout(playTimer); // Clear the timer if mouse leaves before 8 seconds
-        thumbnail.style.display = 'block'; // Show the thumbnail image on mouse leave
-        video.style.display = 'none'; // Hide the video on mouse leave
-        video.currentTime = 0; // Reset the video to the beginning
-        video.pause(); // Pause the video on mouse leave
+        clearTimeout(playTimer); // Clear the timer if mouse leaves before 7.7 seconds
+        thumbnail.style.display = 'block'; //display thumbnail
+        video.style.display = 'none'; // hides the video
+        video.currentTime = 0; // reset video to the beginning
+        video.pause(); 
     });
 });
 
 
-// Slideshow for top part
+// Slideshow for .topslide
 function startSlideshow1(slideshow) {
     let slideIndex = 0;
 
     function showSlides() {
         const slides = slideshow.querySelectorAll('.topslide');
 
+        //loop through all elements with class 'topslide'
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
+            slides[i].style.display = 'none'; //hide all slides
         }
 
-        slideIndex++;
+        slideIndex++; //increment slide to move to the next picture
 
         if (slideIndex > slides.length) {
-            slideIndex = 1;
+            slideIndex = 1; //reset to first slide
         }
 
-        slides[slideIndex - 1].style.display = 'block';
+        slides[slideIndex - 1].style.display = 'block'; 
 
-        setTimeout(showSlides, 1800);
+        setTimeout(showSlides, 1500); //call showSlides recursively, 1.5secs delay
     }
 
-    showSlides();
+    showSlides(); //call slideshow
 }
 
 
 
 //slideshow for routine 3&4
-const slideshowContainers = document.querySelectorAll('.slideshow-container');
-startSlideshow1(slideshowContainers[0]); // Start the first slideshow
+const slideshowContainers = document.querySelectorAll('.slideshow-container'); //selecting slideshow containers
+startSlideshow1(slideshowContainers[0]); 
 
 
 function startSlideshow(slideshow) {
@@ -70,7 +75,7 @@ function startSlideshow(slideshow) {
   
     function showSlides() {
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+        slides[i].style.display = 'none'; //hides all slides
       }
   
       slideIndex++;
@@ -79,19 +84,20 @@ function startSlideshow(slideshow) {
         slideIndex = 1;
       }
   
-      slides[slideIndex - 1].style.display = 'block';
+      slides[slideIndex - 1].style.display = 'block'; //display the current slide
   
-      setTimeout(showSlides, 2400);
+      setTimeout(showSlides, 2000); //set a timeout to call function after 2secs
     }
   
-    showSlides();
+    showSlides(); //call slideshow
   }
   
-  // Start first slideshow
+  //start routine3 slideshow
   const slideshowContainer1 = document.querySelector('.routine3 .slideshow-container');
   startSlideshow(slideshowContainer1);
   
-  // Start second slideshow
+  //satrt routine4 slideshow
   const slideshowContainer2 = document.querySelector('.routine4 .slideshow-container');
   startSlideshow(slideshowContainer2);
   
+ 

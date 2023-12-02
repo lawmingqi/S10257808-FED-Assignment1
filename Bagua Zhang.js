@@ -4,7 +4,7 @@ function addImageHoverEffect(selector) {
 
     image.addEventListener('mouseenter', function() {
         originalTransform = this.style.transform;
-        this.style.transform = 'scale(1.3)'; // Change the scale factor as needed
+        this.style.transform = 'scale(1.2)'; 
     });
     
     image.addEventListener('mouseleave', function() {
@@ -12,7 +12,6 @@ function addImageHoverEffect(selector) {
     });
 }
 
-// To use the function with a specific class or ID
 addImageHoverEffect('.enlarge1');
 addImageHoverEffect('.enlarge2');
 addImageHoverEffect('.image');

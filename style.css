@@ -121,7 +121,7 @@ body {
 .routine2 .text,
 .routine3 .text,
 .routine4 .text{
-    color: rgb(53, 53, 121);
+    color: rgb(0, 0, 0);
     font-family: 'MV Boli';
     font-size: 20px;
 
@@ -179,8 +179,8 @@ body {
 .slides {
     
     position: relative;
-  }
-  
+}
+
 .slides img {
     display: block;
     border-radius: 20px;
@@ -193,22 +193,25 @@ body {
   
 /* Taiji Shan */
 .routine3 {
+    object-fit: cover;
 
     padding-left: 50px;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: -70px;
     
-    transform: rotate(-5deg);
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+.routine3 .slideshow-container{
+    transform: rotate(-5deg);
+    object-fit: cover;
+}
+
 .routine3 .text {
     font-family: 'MV Boli';
     font-size: 20px;
-    transform: rotate(5deg);
 
     margin-left: 10px;
 }
@@ -217,19 +220,21 @@ body {
 .routine4 {
     padding-right: 50px;
     margin-right: 50px;
-    margin-top: -70px;
-
-    transform: rotate(5deg);
+    margin-top: -10px;
 
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
+.routine4 .slideshow-container{
+    transform: rotate(5deg);
+    object-fit: cover;
+}
+
 .routine4 .text {
     font-family: 'MV Boli';
     font-size: 20px;
-    transform: rotate(-5deg);
 
     margin-right: 10px;
 
@@ -238,6 +243,9 @@ body {
 
 /* Intoduction to Wushu*/
 
+.introduction{
+    margin-top: 50px;
+}
 .introduction h2{
     color: white;
     background-color: rgba(71, 71, 118, 0.78);
@@ -351,5 +359,10 @@ body {
     margin-left:50px;
   }
   
-@import "baguazhang.css";
+@import "Bagua Zhang.css";
+@import "Nan Quan.css";
+@import "Taiji Shan.css";
+@import "Jiujiebian, Zuijian.css";
+
+
 

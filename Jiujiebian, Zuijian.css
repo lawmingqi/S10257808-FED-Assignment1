@@ -1,3 +1,4 @@
+/*body*/
 body {
     background-image: url("picture&video/newspaper.jpg");
     background-repeat: no-repeat;
@@ -5,20 +6,21 @@ body {
     background-attachment: fixed;
 }
 
+
 font-face {
     font-family: 'MV Boli'; 
     src: url('MV\ Boli.ttf') format('truetype'); 
 }
 
-/* Heading */
-.header1,
-.header2 {
-    justify-content: center;
-
+/* Nine Section Chain Whip */
+.header1{
+    width: 600px;
     display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
+    margin-top: 50px;
+    margin-left: -40px;
+    font-size: 30px;
+
+}    
 
 .text-content {
     display: flex;
@@ -27,27 +29,32 @@ font-face {
 
 .header1 p,
 .header2 p {
-    margin-top: -69px;
-    width: 100px;
+    margin-left: 150px;
+    margin-top: -60px;
+    width: 120px;
     align-items: center;
     text-align: center;
 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgba(255, 255, 166);
-    color: rgb(0, 0, 0);
-    font-size: 17px;
+    background-color: #ff5249db;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     padding:5px;
+}
+
+.header2 p{
+    margin-top: -80px;
+    margin-left: 290px;
 }
 
 
 h1 {
-    text-shadow: rgba(255, 255, 0, 0.8);
-
-    text-align:center;
+    text-shadow: #ff5349;
     justify-content : center;
+    width:600px;
+    text-align: right;
 
-    font-family: 'MV Boli', Arial, sans-serif; 
-    font-size: 35px;
+    font-family: 'MV Boli'; 
     margin-top: -45px;
     margin-bottom: 10px;
 
@@ -60,7 +67,7 @@ h1 {
     --y-offset: 0.0625em;
     --stroke: 0.025em;
     --background-color: white;
-    --stroke-color: gold;
+    --stroke-color: rgb(242, 109, 79);
     
     text-shadow: 
       
@@ -92,76 +99,49 @@ h1 {
 
 
 /* Description */
-.description {
-    justify-content: center;
-    align-items: center;
-    font-family: 'MV Boli';
-
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-.desc1 {
-    text-align: center;
-    background-color: gold;
-    margin-top: 50px;
-    position: relative; 
-}
-
+.desc1,
 .desc2,
 .desc3 {
-    vertical-align: top;
-    display: inline-block; 
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0); 
-    color: rgba(255, 255, 0);
-    padding: 8px;
-    width: 470px;
-    height: 120px;
-    margin-top: 10px;
-}
-
-.desc2{
-    margin-right: 70px;
-}
-
-/*Images*/
-.enlarge-image {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    margin-top: 30px;
+    text-align: center;
+    font-family: 'MV Boli';
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ff5249;
+    margin: auto; 
 }
 
-.enlarge1 {
-    height: auto; 
-    width: 470px;
-    margin-right: 55px;
+
+
+.desc1 {
+    width: 600px;
+    margin-top: 20px;
 }
 
-.enlarge2 {
-    height: auto; 
-    width: 470px;
-    margin-left: 55px;
+.desc2 {
+    width: 780px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.desc3 {
+    width: 840px;
+    height: auto;
+    margin-top: 20px;
 }
 
-.nq-vid {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    
-/*Double Daggers*/
-
-.header2 {
-    margin-top: 110px;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    margin-right: 70px;
+.jjbSlide {
+    margin-left: 30px;
+    margin-top:70px ;
 }
 
+
+
+
+/*Images for both chain whip and sword*/
 .slides {
     margin-top: -105px;
     margin-left: 55px;
@@ -171,57 +151,90 @@ h1 {
 .slides img {
     display: block;
     width: 470px; 
-    height: auto; 
+    height: 280px; 
     object-fit: cover;
     position: relative; 
 }
 
-.daggers-container {
+
+.jjb-vid {
+    margin-top: 80px;
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    margin-top: 100px;
-    margin-left: 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+/*Drunken Sword*/
+
+.header2 {
+    font-size: 38px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end; 
+    text-align: center; 
+    margin-right: 155px;
+
+}
+
+.text-content{
+    text-align: center;
+}
+
+.text {
+    margin-top: 150px;
+    margin-left: 175px;
+
+    text-align: center;
+    font-size: 19px;
+    width: 380px; 
+    font-family: 'MV Boli';
+    background-color: #ff5249db; 
+    color: gold;
+    padding: 3px; 
+    border-radius: 8px;
+}
+
+
+.swordDescription{
+    margin-left: 75px;
+    border-radius: 8px;
+    margin-top: 130px;
+}
+
+.slideshow-container
+{
+    margin-top: 60px;
 }
 
 .desc4, .desc5 {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 200px;
+
     font-family: 'MV Boli';
     border-radius: 5px;
-    background-color: rgba(0, 0, 0); 
-    color: rgba(255, 255, 0);
+    background-color: #ff5249db; 
+    color: rgb(255, 255, 255);
     padding: 3px;
-    margin-top: -30px;
+    margin-top: 30px;
+    width: 600px;
 }
 
-.desc4{
-    margin-bottom: 10px;
-}
-
-.desc5{
-    margin-top: 10px;
-}
-
-.sbs-vid{
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
-    margin-right: 65px;
-    margin-top: -450px;
-
-}
-
-/*Instagram*/
+/* Instagram logo */
 .instagram {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
 .instagram-logo {
     width: 50px;
     height: 50px;
-    border-radius: 24%; /* To make the image round */
+    border-radius: 24%; 
 }
 
 
@@ -240,7 +253,7 @@ h1 {
     padding: 5px;
     text-align: center;
 
-    background-color: black;
+    background-color: #ff5249; 
     color: gold;
 
     border: none;
@@ -252,8 +265,8 @@ h1 {
 }
 
 .home a:hover {
-    background-color: gold; 
-    color: black;
+    background-color: gold;
+    color: #ff5249;
 }
 
 .home p {
